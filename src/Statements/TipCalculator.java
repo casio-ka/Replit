@@ -1,3 +1,5 @@
+package Statements;
+
 import java.util.Scanner;
 
 public class TipCalculator {

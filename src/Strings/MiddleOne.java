@@ -1,3 +1,5 @@
+package Strings;
+
 import java.util.Scanner;
 
 public class MiddleOne {
@@ -12,9 +14,9 @@ public class MiddleOne {
             System.out.println(word + word + word);
         }else if (charCount==2){
             System.out.println(word+word);
-        }else if (charCount>3 && charCount%2 != 0){
+        }else if (charCount>=3 && charCount%2 != 0){
             System.out.println(word.charAt(middleChar));
-        }else if (charCount>4 && charCount%2 ==0){
+        }else if (charCount>=4 && charCount%2 ==0){
             System.out.println(word.charAt(middleChar-1) +""+ word.charAt(middleChar));
         }
 
