@@ -3,14 +3,30 @@ package Loops;
 public class UtopianTree {
     public static void main(String[] args) {
 
+        int growth = 0;
+        int treeSize = 0;
+
+        for (int year = 1; year <= 10 ; year++) {
+            if (year >=1 && year <=3){
+                growth =1;
+                treeSize +=growth;
+
+            }
+            if (year >3 && year <=10){
+                growth =2;
+                treeSize+=growth;
+            }
+            System.out.println("year "+year+" - growth "+ growth +" cm" );
+            System.out.println("tree size: "+treeSize+"cm");
+        }
+
+
+
 
     }
 }
 /*
-
-The Utopian Tree grows exactly 1 cm for the first three years, and after that it
-grows by 2 cm every year.
-
+The Utopian Tree grows exactly 1 cm for the first three years, and after that it grows by 2 cm every year.
 Show 10 years of growth of the Utopian Tree.
 
 Output:
@@ -34,7 +50,7 @@ tree size: 7cm
 year 6 - growth 2 cm
 tree size: 9cm
 
-... until you reach year 10
-```
+until you reach year 10
 
+```
  */
