@@ -10,12 +10,9 @@ public class Print_first_and_last_char {
         Scanner input = new Scanner(System.in);
         String[] words = {input.nextLine(),input.nextLine(),input.nextLine(),input.nextLine(),input.nextLine()};
 
-        String[] newWords = new String[words.length];
-
-        for (int i = 0, j=0; i < words.length; i++,j++) {
-            newWords[j]=""+words[i].charAt(0) + words[i].charAt(words[i].length()-1);
+        for (int i = 0; i < words.length; i++) {
+            System.out.println(""+words[i].charAt(0) + words[i].charAt(words[i].length()-1));
         }
-        System.out.println(Arrays.toString(newWords));
 
 
     }
